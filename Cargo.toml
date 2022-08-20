@@ -1,0 +1,15 @@
+[package]
+name = "encephalon-destroyer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.release]
+opt-level = "s" # s instead of 3 for smaller binary size and basically same performance
+
+[[bin]]
+name = "ed"
+path = "src/main.rs"
