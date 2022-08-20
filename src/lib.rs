@@ -24,10 +24,16 @@ pub enum Instruction {
 }
 
 #[allow(unused_macros)]
+macro_rules! print_title {
+    () => {
+        println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
+        println!("A BrainFuck interpreter written by \x1b[42m\x1b[30m JhonnyRice \x1b[0m \x1b[32m(https://github.com/JhonnyRice)\x1b[0m\n");
+    };
+}
+#[allow(unused_macros)]
 macro_rules! show_help {
     () => {{
-        println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
-        println!("A BrainFuck interpreter written by \x1b[42m\x1b[37m JhonnyRice \x1b[0m (https://github.com/JhonnyRice)\n");
+        print_title!();
         info!("Usage", "encephalon-destroyer [OPTIONS] path_to_file\n");
         println!("Flags:\n\t[-h|--help]\t\tShows this text");
         println!("Flags:\n\t[-u|--usage]\t\tShows complete usage");
@@ -48,8 +54,7 @@ macro_rules! show_help_and_crash {
 #[allow(unused_macros)]
 macro_rules! show_usage {
     () => {{
-        println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
-        println!("A BrainFuck interpreter written by \x1b[42m\x1b[37m JhonnyRice \x1b[0m (https://github.com/JhonnyRice)\n");
+        print_title!();
         info!("Usage", "");
         println!("\tencephalon-destroyer [PATH_TO_FILE]");
         println!("\tencephalon-destroyer -h | --help");
@@ -66,7 +71,7 @@ macro_rules! show_usage {
 macro_rules! show_info {
     () => {{
         println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
-        println!("\x1b[0mEncephalon Destroyer is a BrainFuck interpreter written by \x1b[42m\x1b[37m JhonnyRice \x1b[0m \x1b[32m(https://github.com/JhonnyRice)\x1b[0m as an experiment and an exercise to learn Rust better. It is highly inspired by bf, a Brainfuck interpreter written by \x1b[43m\x1b[30m Alexander Overvoorde \x1b[0m, aka Overv, \x1b[33m(https://github.com/Overv/bf)\x1b[0m. There are quite a few differences between these two projects, from simple QOL features to actually game-changing ones (such as cell wrapping and the ability to customize this one a bit more).\n\nThis project was really fun and it took me only 4 days to make, which now that I am thinking about it is actually a lot. In the future I might add new features or completely revamp the way this interpreter works, maybe adding even a JIT compiler! (OK I don't know if I will add that because JIT compilers are HARD).\nBut who knows what the future will reserve to us. In the meantime, let me have fun!");
+        println!("\x1b[0mEncephalon Destroyer is a BrainFuck interpreter written by \x1b[42m\x1b[30m JhonnyRice \x1b[0m \x1b[32m(https://github.com/JhonnyRice)\x1b[0m as an experiment and an exercise to learn Rust better. It is highly inspired by bf, a Brainfuck interpreter written by \x1b[43m\x1b[30m Alexander Overvoorde \x1b[0m, aka Overv, \x1b[33m(https://github.com/Overv/bf)\x1b[0m. There are quite a few differences between these two projects, from simple QOL features to actually game-changing ones (such as cell wrapping and the ability to customize this one a bit more).\n\nThis project was really fun and it took me only 4 days to make, which now that I am thinking about it is actually a lot. In the future I might add new features or completely revamp the way this interpreter works, maybe adding even a JIT compiler! (OK I don't know if I will add that because JIT compilers are HARD).\nBut who knows what the future will reserve to us. In the meantime, let me have fun!");
         std::process::exit(0);
     }};
 }
@@ -74,8 +79,7 @@ macro_rules! show_info {
 #[allow(unused_macros)]
 macro_rules! show_version {
     () => {{
-        println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
-        println!("A BrainFuck interpreter written by \x1b[42m\x1b[37m JhonnyRice \x1b[0m (https://github.com/JhonnyRice) ");
+        print_title!();
         info!("Version", "1.0");
         std::process::exit(0);
     }};
