@@ -171,7 +171,7 @@ fn main() {
         Err(error) => raise_error!(error)
     };
 
-    println!("\t\t\t{array_size}");
+    //println!("\t\t\t{array_size}");
     match run(&program, &mut vec![0u8; array_size], &mut 0usize) {
         Ok(_) => std::process::exit(0), // exit safely
         Err(error) => raise_error!(error),
