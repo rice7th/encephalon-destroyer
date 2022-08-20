@@ -28,7 +28,7 @@ macro_rules! show_help {
     () => {{
         println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
         println!("A BrainFuck interpreter written by \x1b[42m\x1b[37m JhonnyRice \x1b[0m (https://github.com/JhonnyRice)\n");
-        info!("Usage", "ed [OPTIONS] path_to_file\n");
+        info!("Usage", "encephalon-destroyer [OPTIONS] path_to_file\n");
         println!("Flags:\n\t[-h|--help]\t\tShows this text");
         println!("Flags:\n\t[-u|--usage]\t\tShows complete usage");
         println!("\t[-i|--info]\t\tShows information about this program");
@@ -51,13 +51,13 @@ macro_rules! show_usage {
         println!("\x1b[0m\x1b[1m\t=+=+=+=+=+= Encephalon Destroyer =+=+=+=+=+=\x1b[0m");
         println!("A BrainFuck interpreter written by \x1b[42m\x1b[37m JhonnyRice \x1b[0m (https://github.com/JhonnyRice)\n");
         info!("Usage", "");
-        println!("\ted [PATH_TO_FILE]");
-        println!("\ted -h | --help");
-        println!("\ted -u | --usage");
-        println!("\ted -v | --version");
-        println!("\ted -i | --info");
-        println!("\ted -A | --array [NUMBER] [PATH_TO_FILE]");
-        println!("\ted [PATH_TO_FILE] -A | --array [NUMBER]");
+        println!("\tencephalon-destroyer [PATH_TO_FILE]");
+        println!("\tencephalon-destroyer -h | --help");
+        println!("\tencephalon-destroyer -u | --usage");
+        println!("\tencephalon-destroyer -v | --version");
+        println!("\tencephalon-destroyer -i | --info");
+        println!("\tencephalon-destroyer -A | --array [NUMBER] [PATH_TO_FILE]");
+        println!("\tencephalon-destroyer [PATH_TO_FILE] -A | --array [NUMBER]");
         std::process::exit(0);
     }};
 }

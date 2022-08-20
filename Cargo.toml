@@ -9,7 +9,3 @@ edition = "2021"
 
 [profile.release]
 opt-level = "s" # s instead of 3 for smaller binary size and basically same performance
-
-[[bin]]
-name = "ed"
-path = "src/main.rs"

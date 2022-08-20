@@ -27,13 +27,13 @@ Yes i know, i could've used `cargo install` but i dont know how to do cross-comp
 
 ## Usage
 ```
-ed [PATH_TO_FILE]
-ed -h | --help
-ed -u | --usage
-ed -v | --version
-ed -i | --info
-ed -A | --array [NUMBER] [PATH_TO_FILE]
-ed [PATH_TO_FILE] -A | --array [NUMBER]
+encephalon-destroyer [PATH_TO_FILE]
+encephalon-destroyer -h | --help
+encephalon-destroyer -u | --usage
+encephalon-destroyer -v | --version
+encephalon-destroyer -i | --info
+encephalon-destroyer -A | --array [NUMBER] [PATH_TO_FILE]
+encephalon-destroyer [PATH_TO_FILE] -A | --array [NUMBER]
 ```
 ## Inspiration
 My main inspiration was [BF by Alexander Overvoorde](https://github.com/Overv/bf). The code looks identical, but the only thing that i really copied were the Loop implementation and the `run()` function args. Other than that is all made by me.

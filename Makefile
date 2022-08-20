@@ -1,6 +1,6 @@
 PREFIX?=/usr
 
 install:
-	cp -f target/release/ed $(PREFIX)/bin/swef
+	cp -f target/release/encephalon-destroyer $(PREFIX)/bin/swefencephalon-destroyer
 uninstall:
-	rm -f $(PREFIX)/bin/swef
+	rm -f $(PREFIX)/bin/encephalon-destroyer
