@@ -12,7 +12,7 @@ Encephalon Destroyer is a BrainFuck VM written in just 4 days.
 To build Encephalon Destroyer, clone this repo and then build it with `cargo build --release`:
 
 ```bash
-git clone https://www.github.com/JhonnyRice/encephalon-destroyer
+git clone https://www.github.com/rice7th/encephalon-destroyer
 cd encephalon-destroyer
 cargo build --release
 ```
